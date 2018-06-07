@@ -30,7 +30,12 @@ $(function() {
 				self.removeColumn();
 			});
 			$columnAddCard.click(function(event) {
+
+				if (event == null) {
+
+				} else {
 				self.addCard(new Card(prompt("Enter the name of the card")));
+				}
 			});
 
 			// CONSTRUCTION COLUMN ELEMENT
@@ -101,8 +106,13 @@ $(function() {
 	$('.create-column')
 		.click(function(){
 			var name = prompt('Enter a column name');
-			var column = new Column(name);
-			board.addColumn(column);
+
+			if (name == null){
+				
+			} else {
+				var column = new Column(name);
+				board.addColumn(column);
+			}
 		});
 
 
