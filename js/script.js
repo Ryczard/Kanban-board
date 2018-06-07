@@ -12,8 +12,10 @@ $(function() {
 		var self = this;
 
 		this.id = randomString();
-		this.name = name;
+		this.name = name || 'Untitled';
 		this.$element = createColumn();
+
+		
 
 		function createColumn() {
 			// CREATING COMPONENTS OF COLUMNS
@@ -55,7 +57,7 @@ $(function() {
 		var self = this;
 
 		this.id = randomString();
-		this.description = description;
+		this.description = description || 'Untitled';
 		this.$element = createCard();
 
 		function createCard() {
