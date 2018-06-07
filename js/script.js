@@ -30,12 +30,7 @@ $(function() {
 				self.removeColumn();
 			});
 			$columnAddCard.click(function(event) {
-
-				if (event == null) {
-
-				} else {
 				self.addCard(new Card(prompt("Enter the name of the card")));
-				}
 			});
 
 			// CONSTRUCTION COLUMN ELEMENT
